@@ -1,0 +1,12 @@
+server:
+  port: 8084
+
+com:
+  seacreeper:
+    scribes:
+      influxdb:
+        host: http://docker.home.zxcv32.com
+        port: 8086
+        bucket: scribes
+        org: seacreeper
+        token:

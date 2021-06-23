@@ -3,12 +3,14 @@ package com.seacreeper.craftsperson.controller;
 import com.seacreeper.craftsperson.service.InfluxDbTalker;
 import java.util.Collection;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("api/http/")
+@CrossOrigin("*")
 public class Http {
 
   @Autowired private InfluxDbTalker influxDbTalker;
